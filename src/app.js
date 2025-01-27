@@ -6,7 +6,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: process.env.CORS_ORIGIN || "https://actionote-project.vercel.app",
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     credentials: true,
   })
