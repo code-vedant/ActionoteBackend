@@ -31,6 +31,11 @@ app.get("/", (req, res) => {
     res.json({ message:"Hello, Backend!" })
 })
 
+app.use((req, res) => {
+    res.status(404).json({ error: "Route not found" });
+});
+
+
 app.use('/v1/user',userRouter)
 app.use('/v1/draw',drawRouter)
 app.use('/v1/tags',tagsRouter)

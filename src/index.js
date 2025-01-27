@@ -15,3 +15,28 @@ connectDB()
 .catch((err) => {
     console.log("MONGO db connection failed !!! ", err);
 })
+
+
+
+
+
+  
+      // "headers": [
+    //   {
+    //     "source": "/api/(.*)",
+    //     "headers": [
+    //       {
+    //         "key": "Access-Control-Allow-Origin",
+    //         "value": "https://actionote-project.vercel.app/"
+    //       },
+    //       {
+    //         "key": "Access-Control-Allow-Methods",
+    //         "value": "GET, POST, PUT, DELETE, OPTIONS"
+    //       },
+    //       {
+    //         "key": "Access-Control-Allow-Headers",
+    //         "value": "Content-Type, Authorization"
+    //       }
+    //     ]
+    //   }
+    // ]
